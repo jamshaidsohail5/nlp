@@ -1,8 +1,6 @@
 # NLP
----
 
 ## Smart Transliterator
-___
 
 Transliterates or returns correct spelling of original word unlike standard transliterators.
 
@@ -22,4 +20,4 @@ Model implemented with Conditional Random Fields (CRF).
 
 Supported languages: Russian, Ukrainian.
 
-[Tutorial](../blob/master/notebooks/transliterator.ipynb 'Tutorial')
+[Tutorial](../master/notebooks/transliterator.ipynb 'Tutorial')
