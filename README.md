@@ -25,7 +25,9 @@ Supported languages: Russian, Ukrainian.
 
 ## Fuzzy Matcher
 
-Hybrid fuzzy matcher based on Jaccard algorithm with modifications. By default, as similarity function Levenshtein is used.
+Hybrid fuzzy matcher based on Jaccard algorithm with modifications. 
+
+By default, Levenshtein is used as similarity function.
 
 Modifications:
 
