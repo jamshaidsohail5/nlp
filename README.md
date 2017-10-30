@@ -25,7 +25,7 @@ Supported languages: Russian, Ukrainian.
 
 ## Fuzzy Matcher
 
-Hybrid fuzzy matcher based on Jaccard algorithm with modifications. 
+Hybrid fuzzy matcher based on Jaccard algorithm with modifications.
 
 By default, Levenshtein is used as similarity function.
 
@@ -35,13 +35,13 @@ Modifications:
 
 ```python
 left = 'coca cola'
-rigth = 'coca colas'
-matcher.get_sim_score(left, rigth)
+right = 'coca colas'
+matcher.get_sim_score(left, right)
 # 0.8941
 
 left = 'sergeant pepper'
-rigth = 'sergeant peppers'
-matcher.get_sim_score(left, rigth)
+right = 'sergeant peppers'
+matcher.get_sim_score(left, right)
 # 0.936
 ```
 
@@ -49,13 +49,13 @@ matcher.get_sim_score(left, rigth)
 
 ```python
 left = 'coca cola company'
-rigth = 'company coca cola'
-matcher.get_sim_score(left, rigth, word_order_matters=True)
+right = 'company coca cola'
+matcher.get_sim_score(left, right, word_order_matters=True)
 # 0.6667
 
 left = 'coca cola company'
-rigth = 'company coca cola'
-matcher.get_sim_score(left, rigth, word_order_matters=False)
+right = 'company coca cola'
+matcher.get_sim_score(left, right, word_order_matters=False)
 # 1.0
 ```
 
@@ -63,19 +63,40 @@ matcher.get_sim_score(left, rigth, word_order_matters=False)
 
 ```python
 left = 'coca cola'
-rigth = 'welcome to coca cola company'
-matcher.get_sim_score(left, rigth, substring=True)
+right = 'welcome to coca cola company'
+matcher.get_sim_score(left, right, substring=True)
 # 1.0
 
 left = 'coca colas'
-rigth = 'welcome to coca cola company'
-matcher.get_sim_score(left, rigth, substring=True)
+right = 'welcome to coca cola company'
+matcher.get_sim_score(left, right, substring=True)
 # 0.8941
 
 left = 'coca colas'
-rigth = 'welcome to coca cola company'
-matcher.get_sim_score(left, rigth, substring=False)
+right = 'welcome to coca cola company'
+matcher.get_sim_score(left, right, substring=False)
 # 0.4606
 ```
 
 [Tutorial](../master/notebooks/fuzzy_matcher.ipynb 'Fuzzy Matcher Tutorial')
+
+
+## String Splitter
+
+Splits text without spaces into human readable format using Zipf's law and dynamic programming.
+
+```python
+text = 'withalittlehelpfrommyfriends'
+splitter.split(text)
+# 'with a little help from my friends'
+
+text = 'lucyintheskywithdiamonds'
+splitter.split(text)
+# 'lucy in the sky with diamonds'
+
+text = 'whilemyguitargentlyweeps'
+splitter.split(text)
+# 'while my guitar gently weeps'
+```
+
+[Tutorial](../master/notebooks/string_splitter.ipynb 'String Splitter Tutorial')
