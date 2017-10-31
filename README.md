@@ -107,7 +107,10 @@ splitter.split(text)
 Labels named entities in text. Implemented with Conditional Random Fields (CRF).
 
 ```python
-text = 'Mr. Puigdemont has appeared in public in Brussels with several colleagues after declaring independence from Spain on October 27.'
+text = (
+    'Mr. Puigdemont has appeared in public in Brussels with several colleagues'
+    'after declaring independence from Spain on October 27.'
+)
 labeler.predict(text)
 
 # [('Mr', 'B-per'),
