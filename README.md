@@ -100,3 +100,35 @@ splitter.split(text)
 ```
 
 [Tutorial](../master/notebooks/string_splitter.ipynb 'String Splitter Tutorial')
+
+
+## Named Entity Labeler (CRF)
+
+Labels named entities in text. Implemented with Conditional Random Fields (CRF).
+
+```python
+text = 'Mr. Puigdemont has appeared in public in Brussels with several colleagues after declaring independence from Spain on October 27.'
+labeler.predict(text)
+
+# [('Mr', 'B-per'),
+# ('Puigdemont', 'I-per'),
+# ('has', 'O'),
+# ('appeared', 'O'),
+# ('in', 'O'),
+# ('public', 'O'),
+# ('in', 'O'),
+# ('Brussels', 'B-geo'),
+# ('with', 'O'),
+# ('several', 'O'),
+# ('colleagues', 'O'),
+# ('after', 'O'),
+# ('declaring', 'O'),
+# ('independence', 'O'),
+# ('from', 'O'),
+# ('Spain', 'B-geo'),
+# ('on', 'O'),
+# ('October', 'B-tim'),
+# ('27', 'I-tim')]
+```
+
+[Tutorial](../master/notebooks/ner_crf.ipynb 'NER CRF Tutorial')
