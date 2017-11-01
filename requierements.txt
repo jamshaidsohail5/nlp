@@ -1,5 +1,8 @@
+Keras==2.0.5
+nltk==3.2.3
 plotly==2.2.1
 py-stringmatching==0.4.0
 regex==2017.9.23
 scipy==0.19.1
 sklearn-crfsuite==0.3.6
+tensorflow-gpu==1.2.1
