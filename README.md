@@ -142,7 +142,9 @@ labeler.predict(text)
 Implemented with Bidirectional LSTM with Features Multi Input
 
 <div>
-    <a href="https://plot.ly/~vgr/7/?share_key=Lm5J4uYlg4JBrJxRfalf3w" target="_blank" title="Plot 7" style="display: block; text-align: center;"><img src="https://plot.ly/~vgr/7.png?share_key=Lm5J4uYlg4JBrJxRfalf3w" alt="Plot 7" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a><script data-plotly="vgr:7" sharekey-plotly="Lm5J4uYlg4JBrJxRfalf3w" src="https://plot.ly/embed.js" async></script>
+    <a href="https://plot.ly/~vgr/7/?share_key=Lm5J4uYlg4JBrJxRfalf3w" target="_blank" title="Plot 7" style="display: block; text-align: center;"><img src="https://plot.ly/~vgr/7.png?share_key=Lm5J4uYlg4JBrJxRfalf3w" alt="Plot 7" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script
+    data-plotly="vgr:7" sharekey-plotly="Lm5J4uYlg4JBrJxRfalf3w" src="https://plot.ly/embed.js" async></script>
 </div>
 
 [Tutorial](../master/notebooks/ner_lstm.ipynb 'NER LSTM Tutorial')
