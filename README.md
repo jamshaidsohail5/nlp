@@ -135,3 +135,12 @@ labeler.predict(text)
 ```
 
 [Tutorial](../master/notebooks/ner_crf.ipynb 'NER CRF Tutorial')
+
+
+## Named Entity Recognition with LSTM
+
+Implemented with Bidirectional LSTM with Features Multi Input
+
+![Model Score](https://plot.ly/~vgr/7.embed "Model Score")
+
+[Tutorial](../master/notebooks/ner_lstm.ipynb 'NER LSTM Tutorial')
